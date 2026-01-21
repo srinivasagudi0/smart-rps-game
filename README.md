@@ -1,24 +1,17 @@
 # Rock Paper Scissors (CLI + Streamlit)
 
-Play the existing CLI game or a simple Streamlit UI.
+Play locally in a terminal or in a simple browser UI. The steps below work on any machine; replace `python3` with `python` or `py` if needed.
 
-## Quick start (Streamlit)
+## Streamlit UI
 
-```bash
-cd /Users/srinivasagudi/PyCharmMiscProject
-python -m streamlit run game/rps_app.py
-```
-
-- Enter your name to load/save rating in `rating.txt` (created beside the repo root).
-- Optionally set custom options (comma-separated). Blank restores `rock,paper,scissors`.
-- Click a choice to play; rating updates per round and persists when a name is set.
-- A loss ends the round; click **Restart round** to play again.
+1) Install once:  
+   `python3 -m pip install -r game/requirements.txt`
+2) Run:  
+   `python3 -m streamlit run game/rps_app.py`
+3) In the browser: enter a name (ratings save to `rating.txt` in the repo root), choose or update options, and click a move to play. A loss ends the round; use **Restart round** to continue.
 
 ## CLI
 
-```bash
-cd /Users/srinivasagudi/PyCharmMiscProject
-python game/rock_paper_scissor.py
-```
-
-Controls: `!rating` shows rating, `!exit` saves & quits. A loss ends the game automatically; restart the script to play again.
+1) Run:  
+   `python3 game/rock_paper_scissor.py`
+2) Commands: `!rating` shows your score; `!exit` saves and quits. A loss ends the run—restart the script to play again.
